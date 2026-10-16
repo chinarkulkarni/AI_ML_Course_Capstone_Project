@@ -39,12 +39,12 @@ This is a repository for the Capstone Project of the Berkeley Haas AI/ML Course
 ### 6\. Here are the findings made during the data analysis:
 
 * The Time Series Decomposition was not found to be useful in this case, since the population plot consisted only of a trend, without any seasonal component.
-* The 2nd degree Feature Engineering model fitted directly on the world population data was used as a baseline model. 
+* The 2nd-degree Feature Engineering model fitted directly on the world population data was used as a baseline model. 
 * The nth degree Feature Engineering model fitted individually on each country and aggregated for the world proved to be a better model in creating the expected bell curve for the world population in the future. However, it exhibited a higher mean squared error on the validation dataset. Here are the observations made based on this model.
 
   * A different degree of Feature Engineering model was used for each country, based on the GridSearchCV results. This showed that each country is currently at a different stage of population growth trajectory.
   * This model predicted that the population growth will reach zero (and subsequently go negative) in the year 2051.
   * The maximum population that the world will have in this year will be 8.903 billion.
-* I intend to use more models to improve the performance and reduce the mean squared error.
-* I also intend to use another dataset that provides the scores of each country for various factors that could drive the population growth for a country (like poverty, fuel consumption, food availability, etc.) to answer the second part of the project.
+* Coming up: More models to improve the performance and reduce the mean squared error.
+* Also coming up: Import another dataset that provides the scores of each country for various factors that could drive the population growth for a country (like poverty, fuel consumption, food availability, etc.) to answer the second part of the project.
 
