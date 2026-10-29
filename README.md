@@ -50,3 +50,7 @@ This is a repository for the Capstone Project of the Berkeley Haas AI/ML Course
 * The Deep Neural Network was found to be too resource-consuming for this modeling task.
 * The **Ensemble Technique model** provided the **best results**, with the lowest MSE and MAPE errors, predicting that the world population will be at its highest in the year **2075**, and the population will reach **9.88 billion** before starting to go down.
 
+### 7.\Next Steps
+* As a next step, I am planning to go more in depth into the growth curve of each country, and to study the factors that govern this curve. 
+* There are a lot of factors (like poverty index, food and water shortage, fuel consumption, deforestation, etc.) that can adversely affect a country's population growth. 
+* I'm planning to uild models that will help me correlate these factors to the growth rate, and better understand how a country can alter their resource-efficiency to shift the year of maxima.
