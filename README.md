@@ -40,17 +40,17 @@ This is a repository for the Capstone Project of the Berkeley Haas AI/ML Course
 ### 6\. Here are the findings made during the data analysis:
 
 * The Time Series Decomposition was not found to be useful in this case, since the population plot consisted only of a trend, without any seasonal component.
-* The 2nd degree Feature Engineering model fitted directly on the world population data was used as a baseline model. 
-* The nth degree Feature Engineering model fitted individually on each country, and aggregated for the world proved to be a better model in creating the expected bell curve for the world population in the future. However, it exhibited a higher mean squared error on the validation dataset. Here are the observations made based on this model.
+* The 2nd-degree Feature Engineering model fitted directly on the world population data was used as a baseline model. 
+* The nth degree Feature Engineering model fitted individually on each country and aggregated for the world proved to be a better model in creating the expected bell curve for the world population in the future. However, it exhibited a higher mean squared error on the validation dataset. Here are the observations made based on this model.
   * A different degree of Feature Engineering model was used for each country, based on the GridSearchCV results. This showed that each country is currently at a different stage of population growth trajectory.
   * This model predicted that the population growth will reach zero (and subsequently go negative) in the year 2051.
-  * The maximum population that the world will have in this year will be 8.903 Billion.
+  * The maximum population that the world will have in this year will be 8.903 billion.
 * The Ridge regularization technique was a useful addition to the Feature Engineering model and improved the accuracy of the models.
 * The ARIMA Model was not found to be useful in determining the year of population maxima, because it mainly works well with linear trends in the time series data.
 * The Deep Neural Network was found to be too resource-consuming for this modeling task.
 * The **Ensemble Technique model** provided the **best results**, with the lowest MSE and MAPE errors, predicting that the world population will be at its highest in the year **2075**, and the population will reach **9.88 billion** before starting to go down.
 
-### 7.\Next Steps
-* As a next step, I am planning to go more in depth into the growth curve of each country, and to study the factors that govern this curve. 
+### 7\. Next Steps
+* As a next step, I am planning to go more in depth into the growth curve of each country and to study the factors that govern this curve. 
 * There are a lot of factors (like poverty index, food and water shortage, fuel consumption, deforestation, etc.) that can adversely affect a country's population growth. 
-* I'm planning to uild models that will help me correlate these factors to the growth rate, and better understand how a country can alter their resource-efficiency to shift the year of maxima.
+* I'm planning to build models that will help me correlate these factors with the growth rate, and better understand how a country can alter its resource efficiency to shift the year of maxima.
